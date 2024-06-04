@@ -13,4 +13,4 @@ repository = "https://github.com/HalsekiRaika/typeon"
 derive = ["typeon_derive"]
 
 [dependencies]
-typeon_derive = { path = "../typeon_derive", optional =  true }
+typeon_derive = { version = "^0.1", path = "../typeon_derive", optional = true }
