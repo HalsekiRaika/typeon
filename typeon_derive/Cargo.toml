@@ -23,4 +23,4 @@ quote = { workspace = true, features = ["proc-macro"] }
 syn = { workspace = true, features = ["clone-impls", "derive", "parsing", "printing", "proc-macro"] }
 
 [dev-dependencies]
-typeon = { path = "../typeon" }
+typeon = { version = "^0.1", path = "../typeon" }
