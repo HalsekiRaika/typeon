@@ -1,0 +1,16 @@
+[package]
+name = "typeon"
+description = "Provides a simple metaprogramming."
+authors = ["ReiRokusanami <reirokusanami.rdh@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/HalsekiRaika/typeon"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+derive = ["typeon_derive"]
+
+[dependencies]
+typeon_derive = { path = "../typeon_derive", optional =  true }

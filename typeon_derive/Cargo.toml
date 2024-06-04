@@ -1,0 +1,26 @@
+[package]
+name = "typeon_derive"
+description = "Provides a macro that allows for automatic derivation of trait of `typeon`."
+authors = ["ReiRokusanami <reirokusanami.rdh@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/HalsekiRaika/typeon"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "typeon_derive"
+proc-macro = true
+
+[[test]]
+name = "tests"
+path = "tests/programs.rs"
+
+[dependencies]
+proc-macro2 = { workspace = true, features = ["proc-macro"] }
+quote = { workspace = true, features = ["proc-macro"] }
+syn = { workspace = true, features = ["clone-impls", "derive", "parsing", "printing", "proc-macro"] }
+
+[dev-dependencies]
+typeon = { path = "../typeon" }
